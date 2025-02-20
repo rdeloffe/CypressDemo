@@ -18,6 +18,9 @@ describe('Test Suite', () => {
       // cy.get('#check13').should('be.visible')
       cy.get('#check3').check()
       cy.get('#radio2').check()
+      cy.get('input[name="img"]').attachFile('meme.png');
+
+
 
   })
 })
