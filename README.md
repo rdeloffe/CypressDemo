@@ -39,16 +39,6 @@ npx cypress run
 
 Exécute les tests en arrière-plan (utile pour l'intégration continue).
 
-📁 Structure du projet
-
-CypressDemo/
-│── cypress/
-│   ├── e2e/               # Contient les tests
-│   ├── fixtures/          # Contient les données de test (JSON)
-│   ├── support/           # Contient les hooks et commandes globales
-│── cypress.config.js      # Fichier de configuration Cypress
-│── package.json           # Dépendances et scripts npm
-│── .gitignore             # Fichiers à ignorer par Git
 
 **📝 Exemple de test Cypress**
 
