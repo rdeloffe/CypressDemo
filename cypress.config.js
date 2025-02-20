@@ -5,6 +5,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl : 'https://only-testing-blog.blogspot.com/2014/01/textbox.html?',
+    baseUrl : 'https://hightest.nc/',
   },
 });
