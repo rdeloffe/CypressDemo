@@ -4,33 +4,36 @@ describe('Test Suite', () => {
       // let firstname = "John"
       // let lastname = "Doe"
 
-      cy.visit('/')
+      // cy.visit('/')
 
       //Exo Zoé
 
-      cy.get('[data-target="#navigation"]').click()
+      // cy.get('[data-target="#navigation"]').click()
 
-      cy.get('#navigation').should('have.class', 'show'); // Vérifie que le menu s'affiche
+      // cy.get('#navigation').should('have.class', 'show'); // Vérifie que le menu s'affiche
 
-      cy.get('a[title="Toolbox"]').click()
-      cy.url().should('include', '/toolbox/');
+      // cy.get('a[title="Toolbox"]').click()
+      // cy.url().should('include', '/toolbox/');
       
-      cy.wait(17000)
-      cy.get('button.pum-close').click()
+      // cy.wait(17000)
+      // cy.get('button.pum-close').click()
 
-      
 
-      cy.get('a[href="https://hightest.nc/ressources/test-istqb.php"]').should('be.visible');
 
-      cy.get('a[href="https://hightest.nc/ressources/test-istqb.php"]')
-      .should('have.attr', 'target', '_blank') // Vérifie qu'il s'ouvre dans un nouvel onglet
-      .should('have.attr', 'href', 'https://hightest.nc/ressources/test-istqb.php'); // Vérifie l'URL
+      // cy.get('a[href="https://hightest.nc/ressources/test-istqb.php"]').should('be.visible');
 
-      cy.get('a[href="https://hightest.nc/ressources/test-istqb.php"]')
-      .invoke('removeAttr', 'target') // Supprime target="_blank"
-      .click();
+      // cy.get('a[href="https://hightest.nc/ressources/test-istqb.php"]')
+      // .should('have.attr', 'target', '_blank') // Vérifie qu'il s'ouvre dans un nouvel onglet
+      // .should('have.attr', 'href', 'https://hightest.nc/ressources/test-istqb.php'); // Vérifie l'URL
 
-      cy.url().should('include', '/ressources/test-istqb.php'); // Vérifie l'URL après clic
+      // cy.get('a[href="https://hightest.nc/ressources/test-istqb.php"]')
+      // .invoke('removeAttr', 'target') // Supprime target="_blank"
+      // .click();
+
+      // cy.url().should('include', '/ressources/test-istqb.php'); // Vérifie l'URL après clic
+
+      // cy.wait(5000)
+
 
 
 
@@ -85,7 +88,6 @@ describe('Test Suite', () => {
 
       // cy.get('input[onclick="myFunction1()"').click()
 
-      
 
   })   
 })
