@@ -4,8 +4,6 @@ import Ajout_Panier from "./PageObject/ajout_panier";
 import Checkout from "./PageObject/checkout_info";
 
 describe('Sauce demo', () => {
-
-
     it ('Test locker_user' , () => {
         //
         const loginpage = new Login();
@@ -38,17 +36,16 @@ describe('Sauce demo', () => {
         Panier_ajout.navigate();
         Tri_DESC.trie();
         Panier_ajout.ajout();
-        Panier_ajout.panier();
-        cy.wait(1000)      
+        Panier_ajout.panier();      
     }) 
 
     it ('checkout + info' , () => {
         const Panier_ajout = new Ajout_Panier();
         const Tri_DESC = new Trie();
-        Panier_ajout.navigate();
-        Tri_DESC.trie();
-        Panier_ajout.ajout();
-        Panier_ajout.panier();
+        Panier_ajout.navigate();//
+        Tri_DESC.trie();//
+        Panier_ajout.ajout();//
+        Panier_ajout.panier();//
         cy.wait(1000)
 
         const Button_check = new Checkout();
@@ -58,12 +55,5 @@ describe('Sauce demo', () => {
         Button_check.Infopc();
         Button_check.continue();
         Button_check.fini();
-    })
-
-
-
-
-
-
-    
+    })    
 })

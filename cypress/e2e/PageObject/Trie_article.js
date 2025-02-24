@@ -5,7 +5,9 @@ class Trie {
 
     trie(){
         cy.get('select[class="product_sort_container"]').select(['Price (high to low)'])
+        cy.get('select[class="product_sort_container"]').select(['Price (high to low)']).should('be.visible');
         return this
     }
 }
+
 export default Trie
