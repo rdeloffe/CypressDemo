@@ -1,7 +1,7 @@
-import Login from "./PageObject/login";
-import Trie from "./PageObject/Trie_article";
-import Ajout_Panier from "./PageObject/ajout_panier";
-import Checkout from "./PageObject/checkout_info";
+import Login from "./PageObject/Object_Demo/login";
+import Trie from "./PageObject/Object_Demo/Trie_article";
+import Ajout_Panier from "./PageObject/Object_Demo/ajout_panier";
+import Checkout from "./PageObject/Object_Demo/checkout_info";
 
 describe('Sauce demo', () => {
     it ('Test locker_user' , () => {

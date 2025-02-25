@@ -10,7 +10,8 @@ module.exports = defineConfig({
     specPattern: [
       "cypress/e2e/**/*.spec.js", // pour inclure les fichiers .spec.js
       "cypress/e2e/**/*.cy.js",   // pour inclure les fichiers .cy.js
-      "cypress/e2e/**/*.js"       // pour inclure tous les fichiers .js
+      "cypress/e2e/**/*.js",       // pour inclure tous les fichiers .js
+      "cypress/e2e/PageObject/**/*.js", // pour inclure tous les fichiers .js
     ],
   },
 });
